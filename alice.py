@@ -73,7 +73,6 @@ class KapitzaPendulum:
     def update_amplitude_mode(self, label):
         self.auto_amplitude = (label == 'Авто амплитуда')
         self.s_amp.set_active(not self.auto_amplitude)
-        self.run_simulation(None)
 
     def calculate_amplitude(self, omega, l):
         omega0 = np.sqrt(self.g / l)
